@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0",
+  "id": "@shopgate/magento-user-account",
+  "components": [
+  ],
+  "configuration": {
+    "showOrderHistory": {
+      "type": "admin",
+      "destination": "frontend",
+      "default": true,
+      "params": {
+        "type": "checkbox",
+        "label": "Show 'Order History' link"
+      }
+    }
+  }
+}
