@@ -2,6 +2,12 @@
   "version": "1.0.0",
   "id": "@shopgate/magento-user-account",
   "components": [
+    {
+      "id": "OrderHistory",
+      "path": "frontend/portals/OrderHistory",
+      "target": "nav-menu.logout.before",
+      "type": "portals"
+    }
   ],
   "configuration": {
     "showOrderHistory": {
