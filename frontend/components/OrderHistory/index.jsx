@@ -2,6 +2,7 @@ import PipelineRequest from '@shopgate/pwa-core/classes/PipelineRequest';
 import React from 'react';
 import PropTypes from 'prop-types';
 import I18n from '@shopgate/pwa-common/components/I18n';
+import ParsedLink from '@shopgate/pwa-common/components/Router/helpers/parsed-link';
 import Icon from '@shopgate/pwa-ui-shared/icons/BoxIcon';
 import connect from '../../connector';
 import { showOrderHistory } from '../../config';
@@ -19,40 +20,17 @@ class OrderHistory extends React.Component {
      */
   constructor(props) {
     super(props);
-    this.state = {
-      url: null,
-    };
+    this.handleClick = this.handleClick.bind(this);
   }
 
   /**
-   * Constructor
+   * Fetch the order history url and redirect
    */
-  componentDidMount() {
-    if (this.props.isUserLoggedIn) {
-      this.fetchUrl();
-    }
-  }
-
-  /**
-   * @param {Object} prevProps prevProps
-   */
-  componentDidUpdate(prevProps) {
-    if (!prevProps.isUserLoggedIn && this.props.isUserLoggedIn) {
-      this.fetchUrl();
-    }
-  }
-
-  /**
-   * Fetch the order history url and set the state
-   */
-  fetchUrl() {
-    if (!this.props.show || this.state.url) {
-      return;
-    }
-
+  handleClick = () => {
     new PipelineRequest('shopgate.checkout.getUrl').dispatch().then((response) => {
       if (response.url) {
-        this.setState({ url: `${response.url}module/sales/controller/order/action/history` });
+        const link = new ParsedLink(`${response.url}module/sales/controller/order/action/history`);
+        link.open();
       }
     });
   }
@@ -69,14 +47,14 @@ class OrderHistory extends React.Component {
       show,
     } = this.props;
 
-    if (!showOrderHistory || !show || !isUserLoggedIn || !this.state.url) {
+    if (!showOrderHistory || !show || !isUserLoggedIn) {
       return null;
     }
 
     return (
       <Item
+        onClick={this.handleClick}
         close={handleClose}
-        link={this.state.url}
         title="navigation.my_orders"
         icon={Icon}
       >
