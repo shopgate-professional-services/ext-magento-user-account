@@ -1,0 +1,23 @@
+{
+  "version": "0.1.0",
+  "id": "@shopgate/magento-user-account",
+  "components": [
+    {
+      "id": "OrderHistory",
+      "path": "frontend/portals/OrderHistory",
+      "target": "nav-menu.logout.before",
+      "type": "portals"
+    }
+  ],
+  "configuration": {
+    "showOrderHistory": {
+      "type": "admin",
+      "destination": "frontend",
+      "default": true,
+      "params": {
+        "type": "checkbox",
+        "label": "Show 'Order History' link"
+      }
+    }
+  }
+}
