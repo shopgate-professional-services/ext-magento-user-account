@@ -6,6 +6,7 @@ import ParsedLink from '@shopgate/pwa-common/components/Router/helpers/parsed-li
 import Icon from '@shopgate/pwa-ui-shared/icons/BoxIcon';
 import connect from '../../connector';
 import { showOrderHistory } from '../../config';
+import styles from './style';
 
 /**
  * OrderHistory
@@ -52,14 +53,16 @@ class OrderHistory extends React.Component {
     }
 
     return (
-      <Item
-        onClick={this.handleClick}
-        close={handleClose}
-        title="navigation.my_orders"
-        icon={Icon}
-      >
-        <I18n.Text string="navigation.my_orders" />
-      </Item>
+      <div className={styles.container}>
+        <Item
+          onClick={this.handleClick}
+          close={handleClose}
+          title="navigation.my_orders"
+          icon={Icon}
+        >
+          <I18n.Text string="navigation.my_orders" />
+        </Item>
+      </div>
     );
   }
 }

@@ -1,11 +1,11 @@
 {
   "version": "0.1.0",
-  "id": "@shopgate/magento-user-account",
+  "id": "@shopgate-project/magento-user-acccount",
   "components": [
     {
       "id": "OrderHistory",
       "path": "frontend/portals/OrderHistory",
-      "target": "nav-menu.logout.before",
+      "target": "nav-menu.address-book.after",
       "type": "portals"
     }
   ],
