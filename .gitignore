@@ -57,7 +57,10 @@ typings/
 # dotenv environment variables file
 .env
 
-frontend/config.json
+# IDE
+.idea/
+.vscode/
 
-**/package-lock.json
-**/yarn.lock
+package-lock.json
+frontend/config.json
+extension/config.json

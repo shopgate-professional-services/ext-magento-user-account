@@ -6,9 +6,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ## [Unreleased]
 
+## [1.0.0]
+### Added
+- PWA 6 support
+
 ## [0.1.0]
 ### Added
 - button to redirect to order history page
-
-[Unreleased]: https://github.com/sgca/ext-magento-user-account/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/sgca/ext-magento-user-account/tree/v0.1.0

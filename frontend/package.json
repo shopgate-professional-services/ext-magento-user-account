@@ -1,6 +1,6 @@
 {
   "name": "@shopgate-project/magento-user-acccount",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Handles the order history link by redirecting to the desktop with an auto-login feature",
   "license": "Apache-2.0",
   "scripts": {
@@ -10,11 +10,11 @@
     "coverage:watch": "npm run coverage -- --watch"
   },
   "devDependencies": {
-    "@shopgate/eslint-config": "^5.2.0",
-    "@shopgate/pwa-common": "^5.2.0",
-    "@shopgate/pwa-common-commerce": "^5.2.0",
-    "@shopgate/pwa-core": "^5.2.0",
-    "@shopgate/pwa-unit-test": "^5.2.0",
+    "@shopgate/eslint-config": "^6.5.0",
+    "@shopgate/pwa-common": "^6.5.0",
+    "@shopgate/pwa-common-commerce": "^6.5.0",
+    "@shopgate/pwa-core": "^6.5.0",
+    "@shopgate/pwa-unit-test": "^6.5.0",
     "@shopgate/react-hammerjs": "^0.5.8",
     "babel-core": "^6.26.0",
     "babel-plugin-react-transform": "^3.0.0",
@@ -33,5 +33,8 @@
     "react-hot-loader": "4.0.1",
     "react-transform-catch-errors": "^1.0.2",
     "redbox-react": "^1.5.0"
+  },
+  "peerDependenciees": {
+    "@shopgate/engage": "^6.5.0"
   }
 }
