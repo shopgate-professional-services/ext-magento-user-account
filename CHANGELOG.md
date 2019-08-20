@@ -6,10 +6,11 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ## [Unreleased]
 
-## [1.0.0]
+## [2.0.0]
 ### Added
 - PWA 6 support
 
+## [1.0.0]
 ## [0.1.0]
 ### Added
 - button to redirect to order history page

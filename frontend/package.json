@@ -1,6 +1,6 @@
 {
   "name": "@shopgate-project/magento-user-acccount",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Handles the order history link by redirecting to the desktop with an auto-login feature",
   "license": "Apache-2.0",
   "scripts": {
