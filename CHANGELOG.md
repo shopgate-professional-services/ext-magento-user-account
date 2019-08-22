@@ -11,6 +11,5 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 - PWA 6 support
 
 ## [1.0.0]
-## [0.1.0]
 ### Added
 - button to redirect to order history page
