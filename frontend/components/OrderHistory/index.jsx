@@ -19,7 +19,7 @@ class OrderHistory extends React.Component {
   handleClick = () => {
     new PipelineRequest('shopgate.checkout.getUrl').dispatch().then((response) => {
       if (response.url) {
-        this.props.historyPush(`${response.url}module/sales/controller/order/action/history`);
+        this.props.historyPush({ pathname: `${response.url}module/sales/controller/order/action/history` });
       }
     });
   };
