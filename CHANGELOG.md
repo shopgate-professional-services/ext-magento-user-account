@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ## [Unreleased]
 
+## [2.0.1]
+### Fixed
+- correct use of PWA 6 history push
+
 ## [2.0.0]
 ### Added
 - PWA 6 support
